@@ -1,0 +1,5 @@
+<launch>
+   <node name="stm32" pkg="stm32pk" type="stm32_driver.py" output="screen">
+      <rosparam file="$(find stm32pk)/config/my_params.yaml" command="load" />
+   </node>
+</launch>
